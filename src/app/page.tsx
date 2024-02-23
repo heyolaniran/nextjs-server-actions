@@ -2,6 +2,8 @@ import Image from "next/image";
 
 
 import { data } from "@/assets/data";
+import { AnimeCardProp, Prop } from "../../types/AnimeCardProp";
+import AnimeCard from "@/components/AnimeCard";
 export default function Home() {
   return (
    <>
@@ -12,8 +14,8 @@ export default function Home() {
 
       <section className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
 
-        {data.map((item , index) => (
-           <div>{item.name}</div>
+        {data.map((item : AnimeCardProp , index ) => (
+            <AnimeCard key={item.id} anime={item} index={index} /> 
         ))}
 
       </section>

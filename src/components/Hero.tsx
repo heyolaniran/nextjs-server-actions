@@ -5,7 +5,7 @@ export default function Hero() {
 
     return (
         <>
-            <header className="bg-hero bg-center bg-cover bg-no-repeat 
+            <header className="bg-hero  bg-cover bg-no-repeat 
             sm:p-16 px-8 flex justify-center lg:items-center max-lg:flex-col w-full sm:gap-16 gap-0
             ">
 
@@ -14,7 +14,7 @@ export default function Hero() {
 
                     <h1 className="sm:text-6xl text-5xl text-white lg:max-w-lg font-bold leading-[120%]">
                         Explore The <span className="red-gradient">Diverse Realms</span>
-                        Anime Magic
+                       <span className="struggle"> Anime Magic</span>
                     </h1>
                 </div>
 

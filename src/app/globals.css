@@ -39,3 +39,14 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.struggle:hover { 
+  background-image: url("https://uploads-ssl.webflow.com/634d41276b882236cc52de2c/642b5a41ad38a45c453b72a8_Vector.svg");
+  background-position : 40% 95%  ; 
+  background-repeat: no-repeat;
+  background-size: 11rem;
+  padding-bottom: 1%;
+  cursor: pointer;
+  transition: 1s;
+
+}
