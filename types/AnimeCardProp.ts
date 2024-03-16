@@ -18,3 +18,5 @@ export interface Prop {
     anime : AnimeCardProp , 
     index: number
 }
+
+export type AnimateJSX = JSX.Element ; 
