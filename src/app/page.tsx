@@ -4,6 +4,7 @@ import Image from "next/image";
 import { data } from "@/assets/data";
 import { AnimeCardProp, Prop } from "../../types/AnimeCardProp";
 import AnimeCard from "@/components/AnimeCard";
+import LoadMore from "@/components/ui/LoadMore";
 export default function Home() {
   return (
    <>
@@ -19,6 +20,8 @@ export default function Home() {
         ))}
 
       </section>
+
+      <LoadMore/>
     </main>
    </>
   );
