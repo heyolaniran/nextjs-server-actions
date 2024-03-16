@@ -1,11 +1,32 @@
 import Image from "next/image";
 import { Prop } from "../../types/AnimeCardProp";
+import { motion } from "framer-motion";
+import { MotionDiv } from "./ui/MotionDiv";
+
+const variants = {
+    hidden : {
+        opacity : 0, 
+    }, 
+    visible : {
+        opacity : 1
+    }
+}
 
 export default function AnimeCard({anime} : Prop) {
 
     return (
         <>
-        <div className="rounded relative w-full max-w-sm">
+        <MotionDiv
+        variants={variants}
+        initial="hidden"
+        animate="visible"
+        transition={{
+            delay: 1 , 
+            ease: "easeInOut", 
+            duration : 0.5
+        }}
+        viewport={{amount : 0}}
+        className="rounded relative w-full max-w-sm">
             <div className="relative w-full h-[37vh]">
                 <Image src={`https://shikimori.one${anime.image.original}`}  alt={anime.name} 
                  fill className="rounded-xl"/>
@@ -33,7 +54,7 @@ export default function AnimeCard({anime} : Prop) {
                     <p className="text-base font-bold text-[#FFAD49]">{anime.score}</p>
                 </div>
             </div>
-        </div>
+        </MotionDiv>
         </>
     ); 
 }
