@@ -12,7 +12,7 @@ const variants = {
     }
 }
 
-export default function AnimeCard({anime} : Prop) {
+export default function AnimeCard({anime , index} : Prop) {
 
     return (
         <>
@@ -21,7 +21,7 @@ export default function AnimeCard({anime} : Prop) {
         initial="hidden"
         animate="visible"
         transition={{
-            delay: 1 , 
+            delay: index * 0.25 , 
             ease: "easeInOut", 
             duration : 0.5
         }}
