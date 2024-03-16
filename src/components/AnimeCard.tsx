@@ -7,7 +7,7 @@ export default function AnimeCard({anime} : Prop) {
         <>
         <div className="rounded relative w-full max-w-sm">
             <div className="relative w-full h-[37vh]">
-                <Image src={anime.image.original} alt={anime.name} 
+                <Image src={`https://shikimori.one${anime.image.original}`}  alt={anime.name} 
                  fill className="rounded-xl"/>
             </div>
 
